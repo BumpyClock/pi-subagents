@@ -12,7 +12,8 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest]
       fail-fast: false
-    runs-on: ${{ matrix.os }}
+    # Keep the logical OS axis unchanged so required check names stay stable.
+    runs-on: ${{ matrix.os == 'ubuntu-latest' && 'boat' || matrix.os }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5

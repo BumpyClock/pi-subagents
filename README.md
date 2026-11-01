@@ -8,6 +8,8 @@
 
 https://github.com/user-attachments/assets/702554ec-faaf-4635-80aa-fb5d6e292fd1
 
+See [CI runner contract](CI.md) for Linux/Windows checks and release validation boundaries.
+
 ## Installation
 
 ```bash

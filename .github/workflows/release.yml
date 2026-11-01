@@ -13,6 +13,7 @@ concurrency:
 
 jobs:
   publish:
+    # npm trusted publishing requires a GitHub-hosted runner.
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
